@@ -9,23 +9,33 @@ import SwiftUI
 
 struct ContectHeaderView: View {
     var body: some View {
-        ZStack{
-            Image(systemName: "heart.fill")
-                .resizable()
-                .scaledToFit()
-            Text("Georgi Pizza Company")
-                .font(.headline)
-                .foregroundColor(.white)
+        VStack {
+            ZStack{
+                Image(systemName: "heart.fill")
+                    .resizable()
+                    .scaledToFit()
+                Text("Georgi Pizza Company")
+                    .font(.headline)
+                    .foregroundColor(.white)
+            }
+            
+            
+            PageTitleView(title: "Order Pizza")
         }
-        
-        
-        Text("Order Pizza")
-            .font(.largeTitle)
     }
 }
 
 struct ContectHeaderView_Previews: PreviewProvider {
     static var previews: some View {
         ContectHeaderView()
+    }
+}
+
+struct PageTitleView: View {
+    var title: String
+    
+    var body: some View {
+        Text(title)
+            .font(.largeTitle)
     }
 }

@@ -12,19 +12,7 @@ struct MenuListView: View {
         VStack{
             Text("Menu")
             List(0..<7) { item in
-                HStack{
-                    Image(systemName: "heart.fill")
-                    VStack{
-                    Text("Huli Chicken Pizza")
-                        HStack {
-                            ForEach(0..<3){item in
-                                Image(systemName: "heart.fill")
-                            }
-                        }
-                       
-                    }
-                    Spacer()
-                }
+                MenuRowView()
             }
         }
     }
@@ -33,5 +21,23 @@ struct MenuListView: View {
 struct MenuListView_Previews: PreviewProvider {
     static var previews: some View {
         MenuListView()
+    }
+}
+
+struct MenuRowView: View {
+    var body: some View {
+        HStack{
+            Image(systemName: "heart.fill")
+            VStack{
+                Text("Huli Chicken Pizza")
+                HStack {
+                    ForEach(0..<3){item in
+                        Image(systemName: "heart.fill")
+                    }
+                }
+                
+            }
+            Spacer()
+        }
     }
 }

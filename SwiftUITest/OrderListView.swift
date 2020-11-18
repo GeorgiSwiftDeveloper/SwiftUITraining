@@ -12,11 +12,7 @@ struct OrderListView: View {
         VStack {
             Text("Your Order")
             List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
-                HStack{
-                    Text("Your order item here")
-                    Spacer()
-                    Text("$0.00")
-                }
+                OrderRowView()
             }
         }
     }
@@ -25,5 +21,16 @@ struct OrderListView: View {
 struct OrderListView_Previews: PreviewProvider {
     static var previews: some View {
         OrderListView()
+    }
+}
+
+struct OrderRowView: View {
+    
+    var body: some View {
+        HStack{
+            Text("Your order item here")
+            Spacer()
+            Text("$0.00")
+        }
     }
 }
