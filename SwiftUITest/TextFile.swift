@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct TextFile: View {
+    var textName: String?
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(textName!).foregroundColor(.white).font(.largeTitle).fontWeight(.heavy)
     }
 }
 
 struct TextFile_Previews: PreviewProvider {
     static var previews: some View {
-        TextFile()
+        TextFile(textName: "b")
     }
 }
