@@ -8,15 +8,32 @@
 import SwiftUI
 
 struct TextFile: View {
-    var textName: String?
+    
     
     var body: some View {
-        Text(textName!).foregroundColor(.white).font(.largeTitle).fontWeight(.heavy)
+        VStack{
+            ZStack{
+                Image(systemName: "heart.fill")
+                    .resizable().scaledToFit()
+                Text("Huli Pizza Company")
+                    .foregroundColor(.white)
+            }
+            Text("Pizza History")
+            List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/){ item in
+                HStack {
+                    Image(systemName: "heart.fill")
+                    Text("Huli Chiken")
+                }
+               
+            }
+            Spacer()
+        }.padding()
     }
 }
 
 struct TextFile_Previews: PreviewProvider {
     static var previews: some View {
-        TextFile(textName: "b")
+        TextFile()
+            
     }
 }
