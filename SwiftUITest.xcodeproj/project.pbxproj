@@ -17,7 +17,6 @@
 		6AF268002561E7B700170171 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AF267FF2561E7B700170171 /* Assets.xcassets */; };
 		6AF268032561E7B700170171 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AF268022561E7B700170171 /* Preview Assets.xcassets */; };
 		6AF268062561E7B700170171 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AF268042561E7B700170171 /* LaunchScreen.storyboard */; };
-		6AF2680F2561F44D00170171 /* TextFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF2680E2561F44D00170171 /* TextFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +32,6 @@
 		6AF268022561E7B700170171 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6AF268052561E7B700170171 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6AF268072561E7B700170171 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6AF2680E2561F44D00170171 /* TextFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +70,6 @@
 				6A840BD325659E3D00A81B66 /* ContectHeaderView.swift */,
 				6A840BD025659D1500A81B66 /* MenuListView.swift */,
 				6A840BCD25659C3700A81B66 /* OrderListView.swift */,
-				6AF2680E2561F44D00170171 /* TextFile.swift */,
 				6AF267FF2561E7B700170171 /* Assets.xcassets */,
 				6AF268042561E7B700170171 /* LaunchScreen.storyboard */,
 				6AF268072561E7B700170171 /* Info.plist */,
@@ -162,7 +159,6 @@
 			files = (
 				6AF267F72561E7B500170171 /* AppDelegate.swift in Sources */,
 				6A840BD125659D1500A81B66 /* MenuListView.swift in Sources */,
-				6AF2680F2561F44D00170171 /* TextFile.swift in Sources */,
 				6AF267F92561E7B500170171 /* SceneDelegate.swift in Sources */,
 				6AF267FB2561E7B500170171 /* ContentView.swift in Sources */,
 				6AF267FE2561E7B500170171 /* SwiftUITest.xcdatamodeld in Sources */,

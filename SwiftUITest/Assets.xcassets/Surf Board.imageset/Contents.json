@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "TopGradient.png",
+      "filename" : "Surf Board.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "TopGradient@2x.png",
+      "filename" : "Surf Board@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "TopGradient@3x.png",
+      "filename" : "Surf Board@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

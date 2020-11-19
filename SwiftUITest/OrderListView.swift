@@ -29,6 +29,7 @@ struct OrderRowView: View {
     var body: some View {
         HStack{
             Text("Your order item here")
+                .fontWeight(.bold)
             Spacer()
             Text("$0.00")
         }

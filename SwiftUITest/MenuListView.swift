@@ -27,12 +27,17 @@ struct MenuListView_Previews: PreviewProvider {
 struct MenuRowView: View {
     var body: some View {
         HStack{
-            Image(systemName: "heart.fill")
+            Image("1_100w")
+                .clipShape(Capsule())
+                .cornerRadius(10).shadow(radius: 10)
             VStack{
                 Text("Huli Chicken Pizza")
-                HStack {
+                    .font(.title)
+                    .fontWeight(.light)
+                HStack() {
                     ForEach(0..<3){item in
-                        Image(systemName: "heart.fill")
+                        Image(systemName: "star.circle")
+                            .foregroundColor(Color.red)
                     }
                 }
                 
@@ -46,8 +51,12 @@ struct ListHeaderView: View {
     var text: String
     var body: some View {
         HStack {
-            Text(text).padding(.leading,5)
+            Text(text)
+                .padding(.leading,5)
+                .foregroundColor(.red)
+            
+            
             Spacer()
-        }
+        }.background(Color(.blue))
     }
 }

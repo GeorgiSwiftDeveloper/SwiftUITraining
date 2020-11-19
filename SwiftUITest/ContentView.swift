@@ -12,8 +12,11 @@ struct ContentView: View {
         
         VStack{
             ContectHeaderView()
+                .layoutPriority(1)
             MenuListView()
+                .layoutPriority(1)
             OrderListView()
+                .layoutPriority(1)
             Spacer()
         }
         .padding()
