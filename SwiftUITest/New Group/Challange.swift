@@ -1,32 +1,31 @@
 //
-//  ContentView.swift
+//  Challange.swift
 //  SwiftUITest
 //
-//  Created by Georgi Malkhasyan on 11/15/20.
+//  Created by Georgi Malkhasyan on 11/19/20.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct Challange: View {
     var body: some View {
         
         VStack{
             ContectHeaderView()
                 .layoutPriority(1)
             PizzaHisotry()
-            MenuListView()
                 .layoutPriority(1)
-            OrderListView()
+            PizzaImageView()
                 .layoutPriority(1)
+            MenuPizzaList()
             Spacer()
         }
-        .padding()
+    
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct Challange_Previews: PreviewProvider {
     static var previews: some View {
-      
-            ContentView()
+        Challange()
     }
 }

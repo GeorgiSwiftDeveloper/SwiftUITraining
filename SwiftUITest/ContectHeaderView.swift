@@ -11,7 +11,7 @@ struct ContectHeaderView: View {
     var body: some View {
         VStack {
             ZStack{
-                Image(systemName: "heart.fill")
+                Image("Surf Board")
                     .resizable()
                     .scaledToFit()
                 Text("Georgi Pizza Company")
@@ -20,7 +20,7 @@ struct ContectHeaderView: View {
             }
             
             
-            PageTitleView(title: "Order Pizza")
+//            PageTitleView(title: "Order Pizza")
         }
     }
 }

@@ -53,10 +53,10 @@ struct ListHeaderView: View {
         HStack {
             Text(text)
                 .padding(.leading,5)
-                .foregroundColor(.red)
+                .foregroundColor(.white)
             
             
             Spacer()
-        }.background(Color(.blue))
+        }.background(Color(#colorLiteral(red: 0.1960784346, green: 0.3411764801, blue: 0.1019607857, alpha: 1)))
     }
 }
