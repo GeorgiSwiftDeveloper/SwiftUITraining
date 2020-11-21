@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct PizzaHisotry: View {
+    var title: String
+    @Binding var isDisplayingOrders: Bool
+    
     var body: some View {
         HStack{
-            Image(systemName: "menubar.arrow.up.rectangle")
+            Image(systemName: isDisplayingOrders ?? false ? "chevron.up.square": "chevron.down.square")
             Spacer()
-            Text("Pizza History")
+            Text(title)
                 .font(.title)
                 .fontWeight(.bold)
                 .foregroundColor(.white)
@@ -25,6 +28,6 @@ struct PizzaHisotry: View {
 
 struct PizzaHisotry_Previews: PreviewProvider {
     static var previews: some View {
-        PizzaHisotry()
+        PizzaHisotry(title: "Orrder Pizza", isDisplayingOrders: Binding.constant(false))
     }
 }

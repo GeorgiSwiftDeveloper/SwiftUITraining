@@ -13,7 +13,7 @@ struct Challange: View {
         VStack{
             ContectHeaderView()
                 .layoutPriority(1)
-            PizzaHisotry()
+//            PizzaHisotry(title: "Order Pizza", isDisplayingOrders: <#Binding<Bool>#>)
                 .layoutPriority(1)
             PizzaImageView()
                 .layoutPriority(1)

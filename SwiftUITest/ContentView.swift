@@ -8,16 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var isMenuDisplayed:Bool = true
+    
     var body: some View {
         
         VStack{
             ContectHeaderView()
                 .layoutPriority(1)
-            PizzaHisotry()
+            Button(action: {self.isMenuDisplayed.toggle()}) {
+                PizzaHisotry(title: "Order Pizza", isDisplayingOrders: $isMenuDisplayed).foregroundColor(.white)
+            }
+          
             MenuListView()
-                .layoutPriority(1)
+                .layoutPriority(isMenuDisplayed ? 1.0 : 0.5)
             OrderListView()
-                .layoutPriority(1)
+                .layoutPriority(isMenuDisplayed ? 0.5 : 1.0)
             Spacer()
         }
         .padding()
