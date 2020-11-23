@@ -15,6 +15,7 @@
 		6ACC4FF72566DC2300164ECD /* PizzaHisotry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACC4FF62566DC2300164ECD /* PizzaHisotry.swift */; };
 		6ACC4FFB2566DE3100164ECD /* PizzaImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACC4FFA2566DE3100164ECD /* PizzaImageView.swift */; };
 		6ACC4FFE2566DFC300164ECD /* MenuPizzaList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACC4FFD2566DFC300164ECD /* MenuPizzaList.swift */; };
+		6AD6303D256C287800314C89 /* MenuDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD6303C256C287800314C89 /* MenuDetailView.swift */; };
 		6AF267F72561E7B500170171 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF267F62561E7B500170171 /* AppDelegate.swift */; };
 		6AF267F92561E7B500170171 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF267F82561E7B500170171 /* SceneDelegate.swift */; };
 		6AF267FB2561E7B500170171 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF267FA2561E7B500170171 /* ContentView.swift */; };
@@ -33,6 +34,7 @@
 		6ACC4FF62566DC2300164ECD /* PizzaHisotry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaHisotry.swift; sourceTree = "<group>"; };
 		6ACC4FFA2566DE3100164ECD /* PizzaImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaImageView.swift; sourceTree = "<group>"; };
 		6ACC4FFD2566DFC300164ECD /* MenuPizzaList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPizzaList.swift; sourceTree = "<group>"; };
+		6AD6303C256C287800314C89 /* MenuDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDetailView.swift; sourceTree = "<group>"; };
 		6AF267F32561E7B500170171 /* SwiftUITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AF267F62561E7B500170171 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AF267F82561E7B500170171 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,9 +76,30 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
+		6AD6303A256C283300314C89 /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				6AF267FA2561E7B500170171 /* ContentView.swift */,
+			);
+			path = ContentView;
+			sourceTree = "<group>";
+		};
+		6AD6303B256C284B00314C89 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6A840BD325659E3D00A81B66 /* ContectHeaderView.swift */,
+				6A840BD025659D1500A81B66 /* MenuListView.swift */,
+				6A840BCD25659C3700A81B66 /* OrderListView.swift */,
+				6AD6303C256C287800314C89 /* MenuDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		6AF267EA2561E7B400170171 = {
 			isa = PBXGroup;
 			children = (
+				6AD6303B256C284B00314C89 /* Views */,
+				6AD6303A256C283300314C89 /* ContentView */,
 				6A59E2FA256B31BC00522BDA /* Model */,
 				6AF267F52561E7B500170171 /* SwiftUITest */,
 				6AF267F42561E7B500170171 /* Products */,
@@ -96,10 +119,6 @@
 			children = (
 				6AF267F62561E7B500170171 /* AppDelegate.swift */,
 				6AF267F82561E7B500170171 /* SceneDelegate.swift */,
-				6AF267FA2561E7B500170171 /* ContentView.swift */,
-				6A840BD325659E3D00A81B66 /* ContectHeaderView.swift */,
-				6A840BD025659D1500A81B66 /* MenuListView.swift */,
-				6A840BCD25659C3700A81B66 /* OrderListView.swift */,
 				6ACC4FF52566DBF500164ECD /* New Group */,
 				6AF267FF2561E7B700170171 /* Assets.xcassets */,
 				6AF268042561E7B700170171 /* LaunchScreen.storyboard */,
@@ -188,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AD6303D256C287800314C89 /* MenuDetailView.swift in Sources */,
 				6AF267F72561E7B500170171 /* AppDelegate.swift in Sources */,
 				6ACC4FF32566DBA200164ECD /* Challange.swift in Sources */,
 				6A840BD125659D1500A81B66 /* MenuListView.swift in Sources */,
