@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct MenuListView: View {
+    var menu = MenuModel().menu
     var body: some View {
         VStack{
             ListHeaderView(text: "Menu")
-            List(0..<7) { item in
-                MenuRowView()
+            List(menu) { item in
+                MenuRowView(menu: item)
+                    .listRowInsets(EdgeInsets())
             }
         }
     }
@@ -25,13 +27,17 @@ struct MenuListView_Previews: PreviewProvider {
 }
 
 struct MenuRowView: View {
+    var menu: MenuItem?
+    
     var body: some View {
-        HStack{
+        VStack(alignment: .leading){
+        HStack(alignment: .top, spacing: 15){
             Image("1_100w")
                 .clipShape(Capsule())
                 .cornerRadius(10).shadow(radius: 10)
-            VStack{
-                Text("Huli Chicken Pizza")
+            
+            VStack(alignment: .leading){
+                Text("\(menu!.name)")
                     .font(.title)
                     .fontWeight(.light)
                 HStack() {
@@ -40,10 +46,10 @@ struct MenuRowView: View {
                             .foregroundColor(Color.red)
                     }
                 }
-                
+                Text("\(menu!.description)").font(.headline).padding()
             }
-            Spacer()
         }
+    }
     }
 }
 
@@ -54,9 +60,9 @@ struct ListHeaderView: View {
             Text(text)
                 .padding(.leading,5)
                 .foregroundColor(.white)
-            
+                .font(.headline)
             
             Spacer()
-        }.background(Color(#colorLiteral(red: 0.1960784346, green: 0.3411764801, blue: 0.1019607857, alpha: 1)))
+        }.padding([.top,.bottom]).background(Color(#colorLiteral(red: 0.1960784346, green: 0.3411764801, blue: 0.1019607857, alpha: 1)))
     }
 }

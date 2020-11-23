@@ -18,9 +18,6 @@ struct ContectHeaderView: View {
                     .font(.headline)
                     .foregroundColor(.white)
             }
-            
-            
-//            PageTitleView(title: "Order Pizza")
         }
     }
 }
