@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MenuListView: View {
-    
+    @Binding var orderModel: OrderModel
     var menu = MenuModel().menu
     
     var body: some View {
@@ -16,7 +16,7 @@ struct MenuListView: View {
             ListHeaderView(text: "Menu")
             NavigationView {
                 List(menu) { item in
-                    NavigationLink(destination: MenuDetailView(selectedPizza: item)){
+                    NavigationLink(destination: MenuDetailView(orderModel: self.$orderModel, menuItem:  item)){
                     MenuRowView(menu: item)
                         .listRowInsets(EdgeInsets())
                     }
@@ -29,7 +29,7 @@ struct MenuListView: View {
 
 struct MenuListView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuListView()
+        MenuListView(orderModel: Binding.constant(OrderModel()))
     }
 }
 

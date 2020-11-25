@@ -11,18 +11,20 @@ struct ContentView: View {
     
     @State var isMenuDisplayed:Bool = true
     
+    @State var orderModel: OrderModel
+    
     var body: some View {
         
         VStack{
-            ContectHeaderView()
-                .layoutPriority(1)
+//            ContectHeaderView()
+//                .layoutPriority(1)
             Button(action: {self.isMenuDisplayed.toggle()}) {
                 PizzaHisotry(title: "Order Pizza", isDisplayingOrders: $isMenuDisplayed).foregroundColor(.white)
             }
           
-            MenuListView()
+            MenuListView(orderModel: $orderModel)
                 .layoutPriority(isMenuDisplayed ? 1.0 : 0.5)
-            OrderListView()
+            OrderListView(orderModel:orderModel)
                 .layoutPriority(isMenuDisplayed ? 0.5 : 1.0)
             Spacer()
         }
@@ -33,6 +35,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
       
-            ContentView()
+        ContentView(orderModel: OrderModel())
     }
 }
